@@ -6,14 +6,14 @@ description: Introduction to the Derivative term
 
 ## The Derivative Term
 
-You can think of the PID controller's derivative term like a car's suspension or another type of dampener. The derivative of a PID controller is just the current rate of change of the error. If you think back to your first algebra class, you probably remember a formula that looked something like the following to get the slope of a line:
+You can think of the PID controller's derivative term like a car's suspension or another type of dampener, it slows down oscillations and provides a smooth response. The derivative of a PID controller is just the current rate of change of the error. If you think back to your first algebra class, you probably remember a formula that looked something like the following to get the slope of a line:
 
 ![](../.gitbook/assets/slope-formula.png)
 
- The derivative of a PID controller effectively does the same thing. We calculate the current rate of change of the error by doing the following:
+The derivative of a PID controller effectively does the same thing. We calculate the current rate of change of the error by doing the following:
 
 \
-**(error - last error) / delta time**
+&#xNAN;**(error - last error) / delta time**
 
 \
 The error is the difference between the reference and the current position. The last error is the previous error, and delta time is the time between the sampling of the previous measurement and the current measurement.
